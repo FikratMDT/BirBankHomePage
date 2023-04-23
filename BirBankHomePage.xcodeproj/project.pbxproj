@@ -40,6 +40,8 @@
 		91AC04AE29F5489500075D98 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 91AC04AD29F5489500075D98 /* Data.json */; };
 		91AC04B029F54B3700075D98 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC04AF29F54B3700075D98 /* MyModel.swift */; };
 		91AC04B229F58B1B00075D98 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC04B129F58B1B00075D98 /* HomePageViewModel.swift */; };
+		91AC04B429F5A62600075D98 /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 91AC04B329F5A62600075D98 /* Test.json */; };
+		91AC04B629F5A67000075D98 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC04B529F5A67000075D98 /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		91AC04AD29F5489500075D98 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		91AC04AF29F54B3700075D98 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		91AC04B129F58B1B00075D98 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		91AC04B329F5A62600075D98 /* Test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
+		91AC04B529F5A67000075D98 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				91AC04AD29F5489500075D98 /* Data.json */,
+				91AC04B329F5A62600075D98 /* Test.json */,
 				9109FF2029F27EE600554E81 /* BirBankHomePage */,
 				9109FF1F29F27EE600554E81 /* Products */,
 			);
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				91AC04AF29F54B3700075D98 /* MyModel.swift */,
+				91AC04B529F5A67000075D98 /* TestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 				9109FF2E29F27EE700554E81 /* LaunchScreen.storyboard in Resources */,
 				9109FF4729F2A81200554E81 /* OperationsCell.xib in Resources */,
 				919DFCD429F446CA00093176 /* StoriesTableViewCell.xib in Resources */,
+				91AC04B429F5A62600075D98 /* Test.json in Resources */,
 				9109FF4F29F2BD4C00554E81 /* CardsListCell.xib in Resources */,
 				919DFCE429F44D5200093176 /* CreditTableViewCell.xib in Resources */,
 				9109FF4329F2A46100554E81 /* CashbacksCell.xib in Resources */,
@@ -283,6 +290,7 @@
 				9109FF2229F27EE600554E81 /* AppDelegate.swift in Sources */,
 				91AC04B229F58B1B00075D98 /* HomePageViewModel.swift in Sources */,
 				9109FF3E29F28F4D00554E81 /* StoriesCell.swift in Sources */,
+				91AC04B629F5A67000075D98 /* TestModel.swift in Sources */,
 				919DFCE329F44D5200093176 /* CreditTableViewCell.swift in Sources */,
 				9109FF2429F27EE600554E81 /* SceneDelegate.swift in Sources */,
 				9109FF3929F28B4400554E81 /* HomePageVC.swift in Sources */,

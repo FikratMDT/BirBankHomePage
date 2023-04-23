@@ -11,7 +11,7 @@ class CashbackTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var model = [CashbackElement]()
+//    var model = [CashbackElement]()
     
     override func awakeFromNib() {
         super.awakeFromNib()

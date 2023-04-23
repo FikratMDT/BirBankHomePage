@@ -10,6 +10,9 @@ import UIKit
 class OperationsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var model = [Operation]()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -31,7 +34,7 @@ extension OperationsTableViewCell: UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "OperationsCell", for: indexPath) as! OperationsCell
-        cell.operationsTitle.text = "test"
+//        cell.operationsTitle.text = model[indexPath.row].operations?.title
         cell.layer.cornerRadius = 10
         return cell
     }

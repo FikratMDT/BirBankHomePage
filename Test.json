@@ -1,16 +1,8 @@
-//
-//  Data.json
-//  BirBankHomePage
-//
-//  Created by Fikrat on 23.04.23.
-//
 
-import Foundation
-
-
-[
+{
+    "data": [
     {
-        "stories": [
+        "cardStories": [
             {
             "story": {
                 "image":""
@@ -29,15 +21,15 @@ import Foundation
     {
         "cashbacks": [
             {
-            "cashback": {
+            "firstCashback": {
                 "image": "",
                 "amount": "3.32 AZN"
             },
-            "cashback": {
+            "secondCashback": {
                 "image": "",
                  "amount": "2.44 AZN"
             },
-            "cashback": {
+            "thirdCashback": {
                 "image": "",
                  "amount": "5.68 AZN"
             }
@@ -49,15 +41,15 @@ import Foundation
     {
         "operations": [
             {
-            "operations": {
+            "firstOperation": {
                 "image": "",
                 "title": "Rahat köçürmə"
             },
-            "operations": {
+            "secondOperation": {
                 "image": "",
                 "title": "Ödənişlər"
             },
-            "operations": {
+            "thirdOperation": {
                 "image": "",
                 "title": "Tranzaksiyalar"
             }
@@ -67,7 +59,7 @@ import Foundation
         "title": ""
     },
     {
-        "cards": [
+        "creditCards": [
             {
             "card": {
                 "imageCard":"",
@@ -85,7 +77,7 @@ import Foundation
         "title": "Kartlar və hesablar"
     },
     {
-        "credits": [
+        "allCredits": [
             {
             "credit": {
                 "image":"",
@@ -103,7 +95,7 @@ import Foundation
         "title": "Kreditler"
     },
     {
-        "products": [
+        "addProduct": [
             {
             "product": {
                 "title":"Mehsul"
@@ -114,6 +106,4 @@ import Foundation
         "title": ""
     }
 ]
-
-
-
+}

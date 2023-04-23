@@ -9,18 +9,40 @@ import Foundation
 
 class HomePageViewModel {
     
-    var myModel = [Section]()
+    var myModel: Section?
     
     var callback: (()->())?
 
+//    func jsonSetup() {
+//        if let jsonFile = Bundle.main.url(forResource: "Test", withExtension: "json"), let data = try? Data(contentsOf: jsonFile) {
+//            do {
+//                myModel = try JSONDecoder().decode([Section].self, from: data)
+//                print("test")
+////                self.callback?()
+//            }catch{
+//                print(error.localizedDescription)
+//            }
+//        }  else{
+//
+//        }
+//    }
+    
     func jsonSetup() {
-        if let jsonFile = Bundle.main.url(forResource: "Data", withExtension: "json"), let data = try? Data(contentsOf: jsonFile) {
+        guard let jsonFile = Bundle.main.path(forResource: "Test", ofType: "json") else {return}
+        let url = URL(fileURLWithPath: jsonFile)
             do {
-                myModel = try JSONDecoder().decode([Section].self, from: data)
-//                self.callback?()
+                let jsonData = try Data(contentsOf: url)
+                myModel = try JSONDecoder().decode(Section.self, from: jsonData)
+                print("test")
+                if let myModel = myModel {
+                    print(myModel)
+                } else{
+                    print("Failed to parse")
+                }
+                
             }catch{
-                print(error.localizedDescription)
+                print("Error \(error)")
             }
         }
     }
-}
+
