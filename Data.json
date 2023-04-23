@@ -1,0 +1,32 @@
+//
+//  Data.json
+//  BirBankHomePage
+//
+//  Created by Fikrat on 23.04.23.
+//
+
+import Foundation
+
+[
+    {
+        "storiesImage": "birBank",
+        "cashback": {
+            "amount": "13,10 AZN",
+            "image":  "birBank"
+        },
+        "operations": {
+            "item": {
+            "birBank"},
+            "title": ["Rahat köçürmə", "Ödəniş", "Tranzaksiyalar"]
+        },
+        "cardList": {
+            "cardAmount": "344,40 AZN",
+            "cardName": "Maaş kartı",
+            "cardImage": "birBank"
+        },
+        "creditList": {
+            "creditName": "BirKart Red",
+            "creditAmount": "6 811 AZN"
+        }
+    }
+]

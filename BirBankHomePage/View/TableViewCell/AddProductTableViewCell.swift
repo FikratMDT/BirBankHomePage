@@ -36,6 +36,6 @@ extension AddProductTableViewCell: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width  * 0.8 , height: 40)
+        CGSize(width: collectionView.frame.width  * 0.8 , height: 72)
     }
 }

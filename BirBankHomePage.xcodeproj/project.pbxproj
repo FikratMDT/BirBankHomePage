@@ -21,7 +21,6 @@
 		9109FF4729F2A81200554E81 /* OperationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9109FF4529F2A81200554E81 /* OperationsCell.xib */; };
 		9109FF4E29F2BD4C00554E81 /* CardsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109FF4C29F2BD4C00554E81 /* CardsListCell.swift */; };
 		9109FF4F29F2BD4C00554E81 /* CardsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9109FF4D29F2BD4C00554E81 /* CardsListCell.xib */; };
-		9109FF5629F2D0C400554E81 /* CreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109FF5529F2D0C400554E81 /* CreditCell.swift */; };
 		9109FF5929F2D1B300554E81 /* AddProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109FF5729F2D1B300554E81 /* AddProductCell.swift */; };
 		9109FF5A29F2D1B300554E81 /* AddProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9109FF5829F2D1B300554E81 /* AddProductCell.xib */; };
 		919DFCD329F446CA00093176 /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919DFCD129F446CA00093176 /* StoriesTableViewCell.swift */; };
@@ -36,6 +35,10 @@
 		919DFCE429F44D5200093176 /* CreditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919DFCE229F44D5200093176 /* CreditTableViewCell.xib */; };
 		919DFCE729F44DEC00093176 /* AddProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919DFCE529F44DEC00093176 /* AddProductTableViewCell.swift */; };
 		919DFCE829F44DEC00093176 /* AddProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919DFCE629F44DEC00093176 /* AddProductTableViewCell.xib */; };
+		91AC04A929F5241500075D98 /* CreditListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC04A729F5241500075D98 /* CreditListCell.swift */; };
+		91AC04AA29F5241500075D98 /* CreditListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AC04A829F5241500075D98 /* CreditListCell.xib */; };
+		91AC04AE29F5489500075D98 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 91AC04AD29F5489500075D98 /* Data.json */; };
+		91AC04B029F54B3700075D98 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC04AF29F54B3700075D98 /* MyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,8 +58,6 @@
 		9109FF4529F2A81200554E81 /* OperationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperationsCell.xib; sourceTree = "<group>"; };
 		9109FF4C29F2BD4C00554E81 /* CardsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListCell.swift; sourceTree = "<group>"; };
 		9109FF4D29F2BD4C00554E81 /* CardsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsListCell.xib; sourceTree = "<group>"; };
-		9109FF5429F2D0C400554E81 /* CreditCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCell.xib; sourceTree = "<group>"; };
-		9109FF5529F2D0C400554E81 /* CreditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCell.swift; sourceTree = "<group>"; };
 		9109FF5729F2D1B300554E81 /* AddProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductCell.swift; sourceTree = "<group>"; };
 		9109FF5829F2D1B300554E81 /* AddProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductCell.xib; sourceTree = "<group>"; };
 		919DFCD129F446CA00093176 /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
@@ -71,6 +72,10 @@
 		919DFCE229F44D5200093176 /* CreditTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditTableViewCell.xib; sourceTree = "<group>"; };
 		919DFCE529F44DEC00093176 /* AddProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductTableViewCell.swift; sourceTree = "<group>"; };
 		919DFCE629F44DEC00093176 /* AddProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductTableViewCell.xib; sourceTree = "<group>"; };
+		91AC04A729F5241500075D98 /* CreditListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditListCell.swift; sourceTree = "<group>"; };
+		91AC04A829F5241500075D98 /* CreditListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditListCell.xib; sourceTree = "<group>"; };
+		91AC04AD29F5489500075D98 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		91AC04AF29F54B3700075D98 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,7 @@
 		9109FF1529F27EE600554E81 = {
 			isa = PBXGroup;
 			children = (
+				91AC04AD29F5489500075D98 /* Data.json */,
 				9109FF2029F27EE600554E81 /* BirBankHomePage */,
 				9109FF1F29F27EE600554E81 /* Products */,
 			);
@@ -119,6 +125,7 @@
 		9109FF3529F28A8C00554E81 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91AC04AF29F54B3700075D98 /* MyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,8 +166,8 @@
 				9109FF4529F2A81200554E81 /* OperationsCell.xib */,
 				9109FF4C29F2BD4C00554E81 /* CardsListCell.swift */,
 				9109FF4D29F2BD4C00554E81 /* CardsListCell.xib */,
-				9109FF5529F2D0C400554E81 /* CreditCell.swift */,
-				9109FF5429F2D0C400554E81 /* CreditCell.xib */,
+				91AC04A729F5241500075D98 /* CreditListCell.swift */,
+				91AC04A829F5241500075D98 /* CreditListCell.xib */,
 				9109FF5729F2D1B300554E81 /* AddProductCell.swift */,
 				9109FF5829F2D1B300554E81 /* AddProductCell.xib */,
 			);
@@ -244,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91AC04AA29F5241500075D98 /* CreditListCell.xib in Resources */,
 				919DFCD829F447B600093176 /* CashbackTableViewCell.xib in Resources */,
 				919DFCE829F44DEC00093176 /* AddProductTableViewCell.xib in Resources */,
 				9109FF2E29F27EE700554E81 /* LaunchScreen.storyboard in Resources */,
@@ -254,6 +262,7 @@
 				9109FF4329F2A46100554E81 /* CashbacksCell.xib in Resources */,
 				919DFCDC29F4488400093176 /* OperationsTableViewCell.xib in Resources */,
 				9109FF3F29F28F4D00554E81 /* StoriesCell.xib in Resources */,
+				91AC04AE29F5489500075D98 /* Data.json in Resources */,
 				9109FF5A29F2D1B300554E81 /* AddProductCell.xib in Resources */,
 				919DFCE029F4494400093176 /* CardListTableViewCell.xib in Resources */,
 				9109FF2B29F27EE700554E81 /* Assets.xcassets in Resources */,
@@ -274,6 +283,8 @@
 				9109FF2429F27EE600554E81 /* SceneDelegate.swift in Sources */,
 				9109FF3929F28B4400554E81 /* HomePageVC.swift in Sources */,
 				919DFCE729F44DEC00093176 /* AddProductTableViewCell.swift in Sources */,
+				91AC04A929F5241500075D98 /* CreditListCell.swift in Sources */,
+				91AC04B029F54B3700075D98 /* MyModel.swift in Sources */,
 				9109FF4229F2A46100554E81 /* CashbacksCell.swift in Sources */,
 				919DFCD729F447B600093176 /* CashbackTableViewCell.swift in Sources */,
 				919DFCDF29F4494400093176 /* CardListTableViewCell.swift in Sources */,
@@ -281,7 +292,6 @@
 				9109FF4E29F2BD4C00554E81 /* CardsListCell.swift in Sources */,
 				919DFCDB29F4488300093176 /* OperationsTableViewCell.swift in Sources */,
 				9109FF5929F2D1B300554E81 /* AddProductCell.swift in Sources */,
-				9109FF5629F2D0C400554E81 /* CreditCell.swift in Sources */,
 				919DFCD329F446CA00093176 /* StoriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

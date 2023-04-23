@@ -18,19 +18,24 @@ class CreditTableViewCell: UITableViewCell {
         
         collectionView.reloadData()
                 
-        collectionView.register(UINib(nibName: "\(CreditCell.self)", bundle: nil), forCellWithReuseIdentifier: "CreditCell")
+        collectionView.register(UINib(nibName: "\(CreditListCell.self)", bundle: nil), forCellWithReuseIdentifier: "CreditListCell")
     }
 }
 
 extension CreditTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CreditCell", for: indexPath) as! CreditCell
-//        cell.cashbackLabel.text = "test"
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CreditListCell", for: indexPath) as! CreditListCell
+        cell.creditName.text = "test"
+        cell.creditAmount.text = "test"
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
 }

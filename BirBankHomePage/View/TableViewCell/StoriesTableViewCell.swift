@@ -40,7 +40,7 @@ extension StoriesTableViewCell: UICollectionViewDataSource, UICollectionViewDele
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 100, height: 40)
+        CGSize(width: 160, height: 100)
 
     }
 }

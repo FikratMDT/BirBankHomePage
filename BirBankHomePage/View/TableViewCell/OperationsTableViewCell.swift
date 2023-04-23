@@ -32,10 +32,11 @@ extension OperationsTableViewCell: UICollectionViewDataSource, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "OperationsCell", for: indexPath) as! OperationsCell
         cell.operationsTitle.text = "test"
+        cell.layer.cornerRadius = 10
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 60, height: 40)
+        CGSize(width: 60, height: collectionView.frame.height)
     }
 }

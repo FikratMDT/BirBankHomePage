@@ -30,13 +30,12 @@ extension CashbackTableViewCell: UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CashbacksCell", for: indexPath) as! CashbacksCell
-        cell.cashbackLabel.text = "testsafasf"
-        cell.layer.cornerRadius = 10
+        cell.cashbackLabel.text = "edv"
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 60, height: 20)
+        CGSize(width: 60, height: 28)
     }
 }
 
