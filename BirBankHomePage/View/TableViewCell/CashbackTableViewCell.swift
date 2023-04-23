@@ -10,6 +10,9 @@ import UIKit
 class CashbackTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var model = [CashbackElement]()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -25,12 +28,12 @@ class CashbackTableViewCell: UITableViewCell {
 extension CashbackTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CashbacksCell", for: indexPath) as! CashbacksCell
-        cell.cashbackLabel.text = "edv"
+//        cell.cashbackLabel.text = model[indexPath.row].cashback?.amount
         return cell
     }
     

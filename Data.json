@@ -9,24 +9,108 @@ import Foundation
 
 [
     {
-        "storiesImage": "birBank",
-        "cashback": {
-            "amount": "13,10 AZN",
-            "image":  "birBank"
-        },
-        "operations": {
-            "item": {
-            "birBank"},
-            "title": ["Rahat köçürmə", "Ödəniş", "Tranzaksiyalar"]
-        },
-        "cardList": {
-            "cardAmount": "344,40 AZN",
-            "cardName": "Maaş kartı",
-            "cardImage": "birBank"
-        },
-        "creditList": {
-            "creditName": "BirKart Red",
-            "creditAmount": "6 811 AZN"
+        "stories": [
+            {
+            "story": {
+                "image":""
+            },
+            "story": {
+                "image":""
+            },
+            "story": {
+                "image":""
+            }
         }
+        ],
+        "id": 0,
+        "title": ""
+    },
+    {
+        "cashbacks": [
+            {
+            "cashback": {
+                "image":"",
+                "amount": "3.32 AZN"
+            },
+            "cashback": {
+                "image":"",
+                 "amount": "2.44 AZN"
+            },
+            "cashback": {
+                "image":"",
+                 "amount": "5.68 AZN"
+            }
+        }
+        ],
+        "id": 1,
+        "title": ""
+    },
+    {
+        "operations": [
+            {
+            "operations": {
+                "image": "",
+                "title": "Rahat köçürmə"
+            },
+            "operations": {
+                "image":"",
+                "title": "Ödənişlər"
+            },
+            "operations": {
+                "image":"",
+                "title": "Tranzaksiyalar"
+            }
+        }
+        ],
+        "id": 2,
+        "title": ""
+    },
+    {
+        "cards": [
+            {
+            "card": {
+                "image":"",
+                "amount": "44,12 AZN",
+                "title": "Maas karti"
+            },
+            "card": {
+                "image":"",
+                 "amount": "108,22 AZN",
+                "title": "Kredit karti"
+            }
+        }
+        ],
+        "id": 3,
+        "title": "Kartlar və hesablar"
+    },
+    {
+        "credits": [
+            {
+            "credit": {
+                "image":"",
+                 "amount": "3 400 AZN",
+                "title": "Nagd kredit"
+            },
+            "credit": {
+                "image":"",
+                 "amount": "96 900 AZN",
+                "title": "Ipoteka"
+            }
+        }
+        ],
+        "id": 4,
+        "title": "Kreditler"
+    },
+    {
+        "products": [
+            {
+            "product": {
+                "title":"Mehsul"
+            }
+        }
+        ],
+        "id": 5,
+        "title": ""
     }
 ]
+

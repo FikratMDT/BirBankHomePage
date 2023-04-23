@@ -9,7 +9,7 @@ import UIKit
 
 class HomePageVC: UIViewController {
     
-    var data = ["test", "test1", "test2"]
+    var viewModel = HomePageViewModel()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,13 +26,19 @@ class HomePageVC: UIViewController {
         tableView.register(UINib(nibName: "\(AddProductTableViewCell.self)", bundle: nil), forCellReuseIdentifier: "AddProductTableViewCell")
         
         
-        
-        
-        tableView.reloadData()
+        viewModel.jsonSetup()
+        viewModel.callback = {
+            self.tableView.reloadData()
+        }
+        self.tableView.reloadData()
+
     }
 }
 
 extension HomePageVC: UITableViewDelegate, UITableViewDataSource {
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        viewModel.myModel.count
+//    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         10
     }
