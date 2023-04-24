@@ -17,9 +17,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="205" height="67"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gak-9r-fng">
-                        <rect key="frame" x="0.0" y="38.5" width="205" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="gak-9r-fng">
+                        <rect key="frame" x="4" y="42" width="197" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -36,8 +36,8 @@
             <color key="backgroundColor" systemColor="systemGray6Color"/>
             <constraints>
                 <constraint firstItem="0pf-IS-piS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Hu0-DC-8Z2"/>
-                <constraint firstItem="gak-9r-fng" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N0n-c2-CNH"/>
-                <constraint firstAttribute="trailing" secondItem="gak-9r-fng" secondAttribute="trailing" id="cLU-QR-b4e"/>
+                <constraint firstItem="gak-9r-fng" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="N0n-c2-CNH"/>
+                <constraint firstAttribute="trailing" secondItem="gak-9r-fng" secondAttribute="trailing" constant="4" id="cLU-QR-b4e"/>
                 <constraint firstItem="0pf-IS-piS" firstAttribute="centerX" secondItem="gak-9r-fng" secondAttribute="centerX" id="cfA-Lf-jUq"/>
                 <constraint firstAttribute="bottom" secondItem="gak-9r-fng" secondAttribute="bottom" constant="8" id="mlO-sL-IRf"/>
             </constraints>

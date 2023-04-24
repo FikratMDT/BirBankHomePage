@@ -21,15 +21,15 @@
     {
         "cashbacks": [
             {
-            "firstCashback": {
+            "cashback": {
                 "image": "",
                 "amount": "3.32 AZN"
             },
-            "secondCashback": {
+            "cashback": {
                 "image": "",
                  "amount": "2.44 AZN"
             },
-            "thirdCashback": {
+            "cashback": {
                 "image": "",
                  "amount": "5.68 AZN"
             }
@@ -41,15 +41,15 @@
     {
         "operations": [
             {
-            "firstOperation": {
+            "operation": {
                 "image": "",
                 "title": "Rahat köçürmə"
             },
-            "secondOperation": {
+            "operation": {
                 "image": "",
                 "title": "Ödənişlər"
             },
-            "thirdOperation": {
+            "operation": {
                 "image": "",
                 "title": "Tranzaksiyalar"
             }

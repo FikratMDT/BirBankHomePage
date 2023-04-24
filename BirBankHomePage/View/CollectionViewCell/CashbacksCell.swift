@@ -8,12 +8,12 @@
 import UIKit
 
 protocol CellConfig {
-    var tes2 : String {get}
+    var cashbackTitle : String {get}
 }
 
 class CashbacksCell: UICollectionViewCell {
     
-    let myData = [Model]()
+//    let myData = [FirstCashbackClass]()
     
     var myModel = ["cashback"]
     @IBOutlet weak var containerView: UIView!
@@ -27,15 +27,7 @@ class CashbacksCell: UICollectionViewCell {
     }
     
     func config(data: CellConfig) {
-        self.cashbackLabel.text =  data.tes2
+        self.cashbackLabel.text =  data.cashbackTitle
     }
 
-}
-
-struct Model: CellConfig {
-    var tes2: String {
-        test
-    }
-    
-    let test: String
 }

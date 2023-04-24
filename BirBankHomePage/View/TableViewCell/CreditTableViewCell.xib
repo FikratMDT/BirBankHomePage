@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,9 +16,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="483" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FnQ-P4-Vsh">
-                        <rect key="frame" x="0.0" y="0.0" width="483" height="109"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FnQ-P4-Vsh">
+                        <rect key="frame" x="16" y="0.0" width="451" height="109"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cwg-vP-0XW">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -34,8 +33,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="FnQ-P4-Vsh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FAe-TA-xCZ"/>
-                    <constraint firstAttribute="trailing" secondItem="FnQ-P4-Vsh" secondAttribute="trailing" id="TOT-vw-8s0"/>
-                    <constraint firstItem="FnQ-P4-Vsh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UtP-yd-Wfd"/>
+                    <constraint firstAttribute="trailing" secondItem="FnQ-P4-Vsh" secondAttribute="trailing" constant="16" id="TOT-vw-8s0"/>
+                    <constraint firstItem="FnQ-P4-Vsh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UtP-yd-Wfd"/>
                     <constraint firstAttribute="bottom" secondItem="FnQ-P4-Vsh" secondAttribute="bottom" id="gQq-eV-we6"/>
                 </constraints>
             </tableViewCellContentView>
@@ -47,9 +46,4 @@
             <point key="canvasLocation" x="255.79710144927537" y="127.56696428571428"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

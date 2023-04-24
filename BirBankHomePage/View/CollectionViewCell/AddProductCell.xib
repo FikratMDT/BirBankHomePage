@@ -25,9 +25,6 @@
                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                             <color key="baseForegroundColor" red="1" green="1" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </buttonConfiguration>
-                        <connections>
-                            <action selector="addProductButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Phd-NN-Sc1"/>
-                        </connections>
                     </button>
                 </subviews>
             </view>

@@ -20,18 +20,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="292" height="106"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4kX-M8-cbJ">
-                                <rect key="frame" x="2" y="1" width="288" height="104"/>
+                                <rect key="frame" x="8" y="1" width="282" height="104"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birbank" translatesAutoresizingMaskIntoConstraints="NO" id="m80-wC-8MP">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m80-wC-8MP">
                                         <rect key="frame" x="0.0" y="44" width="16" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="16" id="Qzr-xU-1sP"/>
                                             <constraint firstAttribute="height" constant="16" id="zIT-Y4-Ow3"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7V-ar-yFS">
-                                        <rect key="frame" x="20" y="44" width="268" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="o7V-ar-yFS">
+                                        <rect key="frame" x="20" y="45" width="262" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -41,7 +41,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4kX-M8-cbJ" secondAttribute="trailing" constant="2" id="HGn-qC-Gcf"/>
-                            <constraint firstItem="4kX-M8-cbJ" firstAttribute="leading" secondItem="Jum-j8-j0e" secondAttribute="leading" constant="2" id="fgd-2T-v1w"/>
+                            <constraint firstItem="4kX-M8-cbJ" firstAttribute="leading" secondItem="Jum-j8-j0e" secondAttribute="leading" constant="8" id="fgd-2T-v1w"/>
                             <constraint firstItem="4kX-M8-cbJ" firstAttribute="top" secondItem="Jum-j8-j0e" secondAttribute="top" constant="1" id="geZ-ta-0eN"/>
                             <constraint firstAttribute="bottom" secondItem="4kX-M8-cbJ" secondAttribute="bottom" constant="1" id="hNO-Yv-dxf"/>
                         </constraints>
@@ -65,7 +65,4 @@
             <point key="canvasLocation" x="313.04347826086956" y="143.30357142857142"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="birbank" width="512" height="250"/>
-    </resources>
 </document>

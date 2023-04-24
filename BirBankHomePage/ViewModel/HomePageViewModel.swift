@@ -33,7 +33,7 @@ class HomePageViewModel {
             do {
                 let jsonData = try Data(contentsOf: url)
                 myModel = try JSONDecoder().decode(Section.self, from: jsonData)
-                print("test")
+//                print("test")
                 if let myModel = myModel {
                     print(myModel)
                 } else{

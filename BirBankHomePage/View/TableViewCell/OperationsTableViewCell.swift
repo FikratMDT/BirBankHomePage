@@ -13,6 +13,11 @@ class OperationsTableViewCell: UITableViewCell {
     
     var model = [Operation]()
     
+    var data = ["items": ["birbank","birbank", "birbank"],
+                "title": ["Rahat kocurme", "Odenisler", "Tranzaksiyalar"]]
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -29,17 +34,18 @@ class OperationsTableViewCell: UITableViewCell {
 extension OperationsTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        data["items"]?.count  ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "OperationsCell", for: indexPath) as! OperationsCell
-//        cell.operationsTitle.text = model[indexPath.row].operations?.title
+        cell.operationsTitle.text = data["title"]?[indexPath.row]
+        cell.operationsItem.image = UIImage(named: data["items"]?[indexPath.row] ?? "")
         cell.layer.cornerRadius = 10
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 60, height: collectionView.frame.height)
+        CGSize(width: 96, height: 60)
     }
 }

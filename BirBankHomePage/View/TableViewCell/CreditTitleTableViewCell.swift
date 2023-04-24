@@ -1,18 +1,15 @@
 //
-//  AddProductTableViewCell.swift
+//  CreditTitleTableViewCell.swift
 //  BirBankHomePage
 //
-//  Created by Fikrat on 22.04.23.
+//  Created by Fikrat on 24.04.23.
 //
 
 import UIKit
 
-class AddProductTableViewCell: UITableViewCell {
+class CreditTitleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    var callback: (()->())?
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -21,23 +18,25 @@ class AddProductTableViewCell: UITableViewCell {
         
         collectionView.reloadData()
                 
-        collectionView.register(UINib(nibName: "\(AddProductCell.self)", bundle: nil), forCellWithReuseIdentifier: "AddProductCell")
+        collectionView.register(UINib(nibName: "\(CreditTitleCell.self)", bundle: nil), forCellWithReuseIdentifier: "CreditTitleCell")    }
     }
-}
 
-extension AddProductTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+
+extension CreditTitleTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "AddProductCell", for: indexPath) as! AddProductCell
-        cell.addProductButton.layer.cornerRadius = 10
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CreditTitleCell", for: indexPath) as! CreditTitleCell
+        cell.creditTitle.text  = "Kreditler"
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width  * 0.8 , height: 64)
+  
+        CGSize(width: collectionView.frame.width, height: 50)
     }
 }
+

@@ -6,25 +6,16 @@
 import Foundation
 
 // MARK: - Section
-struct Section: Codable {
-    let data: [Datum]?
-}
 
-// MARK: - Datum
-struct Datum: Codable {
-    let cardStories: [CardStory]?
-    let id: Int?
-    let title: String?
+struct Section: Codable {
+    let cardStories: [Story]?
     let cashbacks: [Cashback]?
     let operations: [Operation]?
-    let creditCards: [CreditCard]?
-    let allCredits: [AllCredit]?
-    let addProduct: [AddProduct]?
-}
-
-// MARK: - AddProduct
-struct AddProduct: Codable {
-    let product: Product?
+    let creditCards: [Card]?
+    let allCredits: [Credit]?
+    let addProduct: [Product]?
+    let id: Int?
+    let title: String?
 }
 
 // MARK: - Product
@@ -32,19 +23,10 @@ struct Product: Codable {
     let title: String?
 }
 
-// MARK: - AllCredit
-struct AllCredit: Codable {
-    let credit: Credit?
-}
 
 // MARK: - Credit
 struct Credit: Codable {
     let image, amount, title: String?
-}
-
-// MARK: - CardStory
-struct CardStory: Codable {
-    let story: Story?
 }
 
 // MARK: - Story
@@ -54,18 +36,10 @@ struct Story: Codable {
 
 // MARK: - Cashback
 struct Cashback: Codable {
-    let firstCashback, secondCashback, thirdCashback: FirstCashbackClass?
-}
-
-// MARK: - FirstCashbackClass
-struct FirstCashbackClass: Codable {
     let image, amount: String?
 }
 
-// MARK: - CreditCard
-struct CreditCard: Codable {
-    let card: Card?
-}
+
 
 // MARK: - Card
 struct Card: Codable {
@@ -74,10 +48,5 @@ struct Card: Codable {
 
 // MARK: - Operation
 struct Operation: Codable {
-    let firstOperation, secondOperation, thirdOperation: FirstOperationClass?
-}
-
-// MARK: - FirstOperationClass
-struct FirstOperationClass: Codable {
     let image, title: String?
 }

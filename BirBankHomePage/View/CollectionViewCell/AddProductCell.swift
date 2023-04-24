@@ -14,6 +14,6 @@ class AddProductCell: UICollectionViewCell {
         super.awakeFromNib()
     }
 
-//    @IBAction func addProductButtonAction(_ sender: Any) {
-//    }
+    @IBAction func addProductButtonAction(_ sender: Any) {
+    }
 }

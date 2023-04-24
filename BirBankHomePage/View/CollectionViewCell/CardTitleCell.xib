@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardTitleCell" customModule="BirBankHomePage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="62"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="62"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="135" translatesAutoresizingMaskIntoConstraints="NO" id="wCK-Zg-cEx">
+                        <rect key="frame" x="8" y="4" width="348" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kartlar  ve hesablar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCE-ku-3ek">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8r6-bS-4a6">
+                                <rect key="frame" x="303" y="0.0" width="45" height="54"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.app.fill" catalog="system">
+                                    <color key="baseForegroundColor" red="0.85091495510000004" green="0.27127945419999999" blue="0.28231483699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addCardButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="G8a-cf-d4U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wCK-Zg-cEx" secondAttribute="bottom" constant="4" id="Zud-zJ-pZK"/>
+                <constraint firstAttribute="trailing" secondItem="wCK-Zg-cEx" secondAttribute="trailing" constant="8" id="e4n-o7-cJ8"/>
+                <constraint firstItem="wCK-Zg-cEx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="iU0-4P-ine"/>
+                <constraint firstItem="wCK-Zg-cEx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="lhM-MM-7pb"/>
+            </constraints>
+            <size key="customSize" width="364" height="62"/>
+            <connections>
+                <outlet property="cardTitle" destination="WCE-ku-3ek" id="RwV-wW-gC5"/>
+            </connections>
+            <point key="canvasLocation" x="365.21739130434787" y="96.428571428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+    </resources>
+</document>

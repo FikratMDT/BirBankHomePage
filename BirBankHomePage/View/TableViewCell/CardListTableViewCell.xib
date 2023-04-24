@@ -17,8 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="366" height="130"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Cd1-Yc-Hc9">
-                        <rect key="frame" x="0.0" y="0.0" width="366" height="130"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Cd1-Yc-Hc9">
+                        <rect key="frame" x="16" y="8" width="334" height="114"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="73V-pU-m7Q">
                             <size key="itemSize" width="128" height="300"/>
@@ -33,10 +33,10 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Cd1-Yc-Hc9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="I7f-v0-VAy"/>
-                    <constraint firstAttribute="trailing" secondItem="Cd1-Yc-Hc9" secondAttribute="trailing" id="RlR-tJ-2zN"/>
-                    <constraint firstAttribute="bottom" secondItem="Cd1-Yc-Hc9" secondAttribute="bottom" id="fSh-ax-eGW"/>
-                    <constraint firstItem="Cd1-Yc-Hc9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xxY-to-md8"/>
+                    <constraint firstItem="Cd1-Yc-Hc9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="I7f-v0-VAy"/>
+                    <constraint firstAttribute="trailing" secondItem="Cd1-Yc-Hc9" secondAttribute="trailing" constant="16" id="RlR-tJ-2zN"/>
+                    <constraint firstAttribute="bottom" secondItem="Cd1-Yc-Hc9" secondAttribute="bottom" constant="8" id="fSh-ax-eGW"/>
+                    <constraint firstItem="Cd1-Yc-Hc9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="xxY-to-md8"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

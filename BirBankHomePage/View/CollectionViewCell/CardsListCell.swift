@@ -14,7 +14,7 @@ class CardsListCell: UICollectionViewCell {
     @IBOutlet weak var cardAmountLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        cardImage.layer.cornerRadius = 10
+        cardImage.layer.cornerRadius = 6
     }
 
 }

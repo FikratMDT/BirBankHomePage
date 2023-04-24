@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CreditTitleCell" customModule="BirBankHomePage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="109"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="135" translatesAutoresizingMaskIntoConstraints="NO" id="uQ1-yC-Iu3">
+                        <rect key="frame" x="8" y="4" width="411" height="101"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Kreditler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bb-cD-n0L">
+                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="101"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9E-OV-6rZ">
+                                <rect key="frame" x="366" y="0.0" width="45" height="101"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.app.fill" catalog="system">
+                                    <color key="baseForegroundColor" red="0.85091495510000004" green="0.27127945419999999" blue="0.28231483699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addCreditButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ICa-u8-mXw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="uQ1-yC-Iu3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="kxw-7t-jbm"/>
+                <constraint firstAttribute="trailing" secondItem="uQ1-yC-Iu3" secondAttribute="trailing" constant="8" id="py6-Sd-G3H"/>
+                <constraint firstItem="uQ1-yC-Iu3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="qYb-KJ-Xgj"/>
+                <constraint firstAttribute="bottom" secondItem="uQ1-yC-Iu3" secondAttribute="bottom" constant="4" id="xDb-tL-gDZ"/>
+            </constraints>
+            <size key="customSize" width="427" height="109"/>
+            <connections>
+                <outlet property="creditTitle" destination="6bb-cD-n0L" id="NMe-u9-waC"/>
+            </connections>
+            <point key="canvasLocation" x="410.86956521739131" y="112.16517857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+    </resources>
+</document>

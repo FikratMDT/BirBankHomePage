@@ -11,7 +11,11 @@ class CashbackTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-//    var model = [CashbackElement]()
+    var model: Cashback?
+    
+    var data = ["amount": ["2.33 AZN", "4,44 AZN", "1,29 AZN"],
+                "image": ["birbank", "birbank","birbank"]
+                ]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,12 +37,13 @@ extension CashbackTableViewCell: UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CashbacksCell", for: indexPath) as! CashbacksCell
-//        cell.cashbackLabel.text = model[indexPath.row].cashback?.amount
+        cell.cashbackLabel.text = data["amount"]?[indexPath.row]
+        cell.cashbackImage.image = UIImage(named: data["image"]?[indexPath.row] ?? "")
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 60, height: 28)
+        CGSize(width: 80, height: 28)
     }
 }
 
